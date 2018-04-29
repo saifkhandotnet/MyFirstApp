@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="toggleText()"> Display Details </button>
+<p *ngIf="showOriginal; else alternateText">
+  This is sample text which also contains the password and the secret password = "tuna" !
+</p>
+<ng-template #alternateText>
+  <p>
+    This is sample text which also contains the password and the "tuna" = secret password !
+  </p>
+</ng-template>
+
+<h4 [ngStyle]="{backgroundColor:i>=5 ? 'blue':'transparent'}" [ngClass]="{'white-text':i>=5}" *ngFor="let log of logs; let i = index">{{log}}</h4>

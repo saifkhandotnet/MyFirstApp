@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
-import { WarningComponent} from './warning/warning.component';
+import { AssignmentComponent } from './assignment/assignment.component';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { WarningComponent} from './warning/warning.component';
     AppComponent,
     ServerComponent,
     ServersComponent,
-    WarningComponent
+    AssignmentComponent
   ],
   imports: [
     BrowserModule,

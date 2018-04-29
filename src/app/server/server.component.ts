@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styles: ['P { color: blue}']
 })
 export class ServerComponent implements OnInit {
+  userName= '';
+  allowSubmit = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+  resetAgreement(){
+    this.userName = '';
+    this.allowSubmit = false;
+  }
+
+  onUpdateUsername(event: Event){
+    this.allowSubmit = (((<HTMLInputElement>event.target).value.length) > 0);
+    
+    
+    } 
+  }
+
